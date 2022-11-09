@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.29/dist/sweetalert2.all.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+
+    <title>Survey</title>
+</head>
+<body>
+    <h1>다음 그림을 보고 더 적절한 키워드를 고르세요</h1>
+    <h4 id="artist"></h4>
+    <img class="picture" id="artwork"> 
+    <div class=" btns" id="btns">
+        <div class="btn-container" id="ei">
+            <div class="discription">표현주제</div>
+            <button id="e">외부세계<br>E</button>
+            <button id="i">내면세계<br>I</button>
+        </div>
+        <div class="btn-container" id="ra">
+            <div class="discription">구성방식</div>
+            <button id="r">재현적<br>R</button>
+            <button id="a">추상적<br>A</button>
+        </div>
+        <div class="btn-container" id="nd">
+            <div class="discription">표현양식</div>
+            <button id="n">자연주의적<br>N</button>
+            <button id="d">장식적<br>D</button>
+        </div>
+        <div class="btn-container" id="cs">
+            <div class="discription">감정이입</div>
+            <button id="c">인지적<br>C</button>
+            <button id="s">정서적<br>S</button>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="title" id="title"></div>
+        <div class="detail-info" id="detail-info"></div>
+        <button class="next" id="next">다음</button>
+    </div>
+
+    <script src="index.js" type="module"></script>
+</body>
+</html>
